@@ -49,6 +49,8 @@ public class MainActivity extends ActionBarActivity {
         });
 
         channelEditText = (EditText) findViewById(R.id.channelEditText);
+
+        /*
         channelEditText.setOnKeyListener(new OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // If the event is a key-down event on the "enter" button
@@ -68,7 +70,7 @@ public class MainActivity extends ActionBarActivity {
                 }
                 return false;
             }
-        });
+        });*/
 
     }
 
@@ -84,6 +86,8 @@ public class MainActivity extends ActionBarActivity {
     // ==============================================================================
 
     public void shareLocation(View view) {
+        channelName = channelEditText.getText().toString();
+
         if (useMapBox) {
             Log.d(TAG, "Share Location With MapBox Chosen on channel: "
                     + channelName);
@@ -97,6 +101,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void followLocation(View view) {
+        channelName = channelEditText.getText().toString();
         if (useMapBox) {
             Log.d(TAG, "Follow Location With MapBox Chosen on channel: "
                     + channelName);

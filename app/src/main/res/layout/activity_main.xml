@@ -45,7 +45,8 @@
         android:text="@string/share_button"
         android:textAllCaps="false"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/light_blue" />
+        android:textColor="@color/light_blue"
+         />
 
     <Button
         style="?android:attr/borderlessButtonStyle"
